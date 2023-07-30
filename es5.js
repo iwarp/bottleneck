@@ -2881,7 +2881,7 @@
 	                        return _this3.runScript(name, args);
 	                      });
 	                    }
-	                  } else if (e.message === "UNKNOWN_CLIENT" || e.message === "UNKNOWN_CLIENT") {
+	                  } else if (e.message === "UNKNOWN_CLIENT" || e.message === "ERR UNKNOWN_CLIENT") {
 	                    return _this3.runScript("register_client", [_this3.instance.queued()]).then(function () {
 	                      return _this3.runScript(name, args);
 	                    });
@@ -3353,7 +3353,7 @@
 	}();
 	var Sync_1 = Sync;
 
-	var version = "2.20.0";
+	var version = "2.20.1";
 	var version$1 = {
 		version: version
 	};
